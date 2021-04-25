@@ -1,20 +1,3 @@
-/*
-Theme Name: Food WP Child
-Description: A <a href='http://codex.wordpress.org/Child_Themes'>Child Theme</a> for the Food WP Wordpress Theme. If you plan to do a lot of file modifications we recommend to use this Theme instead of the original Theme. Updating wil be much easier then.
-Version: 1.0
-Template: food-wp
-Author: An-Themes
-Author URI: http://www.anthemes.com/
-Tags: sticky-post, right-sidebar, custom-colors
-License: GNU General Public License version 3.0
-License URI: http://www.gnu.org/licenses/gpl-3.0.html
-*/
-
-
-/* =Theme customization starts here
--------------------------------------------------------------- */
-
-/* -- WP Recipe Maker -- */
 .wprm-print .wprm-recipe-tastefully-simple, 
 .wprm-recipe-container .wprm-recipe-tastefully-simple { border: 2px dashed #fff;}
 .wprm-print .wprm-recipe-tastefully-simple, 
