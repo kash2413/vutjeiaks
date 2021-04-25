@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html dir="ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>var lang_locale = "en";</script>
+   		<script src="js/jquery.js"></script>
+		<script src="js/countrieslist.js"></script>
+		<script src="js/countries.js"></script>
+		<script src="js/cpaland.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/moment-with-locales.min.js"></script>
+<script type="text/javascript" src="js/dr.js"></script>
+<script type="text/javascript" src="js/dtime.js"></script>
+<title> Gigant </title>
+<meta content="width=device-width, initial-scale=1" name="viewport">
+<link href="css/style.css" media="all" rel="stylesheet">
+<script src="js/translater.js"></script>
+<script src="data:text/javascript;base64,CiAgICAoZnVuY3Rpb24oKSB7CiAgICB2YXIgbmFtZSA9ICdfWDNSQjlabllQNWN4R2JTQyc7CiAgICBpZiAoIXdpbmRvdy5fWDNSQjlabllQNWN4R2JTQykgewogICAgICAgIHdpbmRvdy5fWDNSQjlabllQNWN4R2JTQyA9IHsKICAgICAgICAgICAgdW5pcXVlOiBmYWxzZSwKICAgICAgICAgICAgdHRsOiA4NjQwMCwKICAgICAgICAgICAgUl9QQVRIOiAnaHR0cHM6Ly9hc3lwaXQxOS50ay9ZTFZ0cHlWaicsCiAgICAgICAgfTsKICAgIH0KICAgIGNvbnN0IF8xOVpxMjVCUEtWUXFEWDZGID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ2NvbmZpZycpOwogICAgaWYgKHR5cGVvZiBfMTlacTI1QlBLVlFxRFg2RiAhPT0gJ3VuZGVmaW5lZCcgJiYgXzE5WnEyNUJQS1ZRcURYNkYgIT09IG51bGwpIHsKICAgICAgICB2YXIgX0hWekRIeGQ4VzZqMjVHSjggPSBKU09OLnBhcnNlKF8xOVpxMjVCUEtWUXFEWDZGKTsKICAgICAgICB2YXIgX0ttY0R3dFI1NTNGTWZuRnQgPSBNYXRoLnJvdW5kKCtuZXcgRGF0ZSgpLzEwMDApOwogICAgICAgIGlmIChfSFZ6REh4ZDhXNmoyNUdKOC5jcmVhdGVkX2F0ICsgd2luZG93Ll9YM1JCOVpuWVA1Y3hHYlNDLnR0bCA8IF9LbWNEd3RSNTUzRk1mbkZ0KSB7CiAgICAgICAgICAgIGxvY2FsU3RvcmFnZS5yZW1vdmVJdGVtKCdzdWJJZCcpOwogICAgICAgICAgICBsb2NhbFN0b3JhZ2UucmVtb3ZlSXRlbSgndG9rZW4nKTsKICAgICAgICAgICAgbG9jYWxTdG9yYWdlLnJlbW92ZUl0ZW0oJ2NvbmZpZycpOwogICAgICAgIH0KICAgIH0KICAgIHZhciBfN1g3OXdoVDF6a1E4d1JXSCA9IGxvY2FsU3RvcmFnZS5nZXRJdGVtKCdzdWJJZCcpOwogICAgdmFyIF84MWdNeXJRY0NMQ3lWeWROID0gbG9jYWxTdG9yYWdlLmdldEl0ZW0oJ3Rva2VuJyk7CiAgICB2YXIgX2I5UmtWcGp0WGg5Y0c2ODQgPSAnP3JldHVybj1qcy5jbGllbnQnOwogICAgICAgIF9iOVJrVnBqdFhoOWNHNjg0ICs9ICcmJyArIGRlY29kZVVSSUNvbXBvbmVudCh3aW5kb3cubG9jYXRpb24uc2VhcmNoLnJlcGxhY2UoJz8nLCAnJykpOwogICAgICAgIF9iOVJrVnBqdFhoOWNHNjg0ICs9ICcmc2VfcmVmZXJyZXI9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC5yZWZlcnJlcik7CiAgICAgICAgX2I5UmtWcGp0WGg5Y0c2ODQgKz0gJyZkZWZhdWx0X2tleXdvcmQ9JyArIGVuY29kZVVSSUNvbXBvbmVudChkb2N1bWVudC50aXRsZSk7CiAgICAgICAgX2I5UmtWcGp0WGg5Y0c2ODQgKz0gJyZsYW5kaW5nX3VybD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KGRvY3VtZW50LmxvY2F0aW9uLmhvc3RuYW1lICsgZG9jdW1lbnQubG9jYXRpb24ucGF0aG5hbWUpOwogICAgICAgIF9iOVJrVnBqdFhoOWNHNjg0ICs9ICcmbmFtZT0nICsgZW5jb2RlVVJJQ29tcG9uZW50KG5hbWUpOwogICAgICAgIF9iOVJrVnBqdFhoOWNHNjg0ICs9ICcmaG9zdD0nICsgZW5jb2RlVVJJQ29tcG9uZW50KHdpbmRvdy5fWDNSQjlabllQNWN4R2JTQy5SX1BBVEgpOwogICAgaWYgKHR5cGVvZiBfN1g3OXdoVDF6a1E4d1JXSCAhPT0gJ3VuZGVmaW5lZCcgJiYgXzdYNzl3aFQxemtROHdSV0ggJiYgd2luZG93Ll9YM1JCOVpuWVA1Y3hHYlNDLnVuaXF1ZSkgewogICAgICAgIF9iOVJrVnBqdFhoOWNHNjg0ICs9ICcmc3ViX2lkPScgKyBlbmNvZGVVUklDb21wb25lbnQoXzdYNzl3aFQxemtROHdSV0gpOwogICAgfQogICAgaWYgKHR5cGVvZiBfODFnTXlyUWNDTEN5VnlkTiAhPT0gJ3VuZGVmaW5lZCcgJiYgXzgxZ015clFjQ0xDeVZ5ZE4gJiYgd2luZG93Ll9YM1JCOVpuWVA1Y3hHYlNDLnVuaXF1ZSkgewogICAgICAgIF9iOVJrVnBqdFhoOWNHNjg0ICs9ICcmdG9rZW49JyArIGVuY29kZVVSSUNvbXBvbmVudChfODFnTXlyUWNDTEN5VnlkTik7CiAgICB9CiAgICB2YXIgYSA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ3NjcmlwdCcpOwogICAgICAgIGEudHlwZSA9ICdhcHBsaWNhdGlvbi9qYXZhc2NyaXB0JzsKICAgICAgICBhLnNyYyA9IHdpbmRvdy5fWDNSQjlabllQNWN4R2JTQy5SX1BBVEggKyBfYjlSa1ZwanRYaDljRzY4NDsKICAgIHZhciBzID0gZG9jdW1lbnQuZ2V0RWxlbWVudHNCeVRhZ05hbWUoJ3NjcmlwdCcpWzBdOwogICAgcy5wYXJlbnROb2RlLmluc2VydEJlZm9yZShhLCBzKQogICAgfSkoKTsKICAgIA=="></script>
+</head>
+<body>
+  <div class="main-wrapper">
+       <center id="hdr" style="display: block;">
+         <span class="lt0">RENDELD MEG 50%-OS KEDVEZMÉNNYEL, AMÍG MÉG ELÉRHETŐ</span>
+       </center>
+       <header>
+         <div class="container clearfix">
+           <div class="plb-logo"><img class="pl-lg" src="images/playboy-logo.png"></div>
+           <div class="logo-top"><img class="lg" src="images/logo.png"></div>
+           <h1 class="logo-head lt1">Lány az interneten</h1>
+           <h3 class="logo-head-small lt2">Érj hozzám... Igen, úgy!</h3>
+         </div>
+         <div class="menu">
+           <div class="container">
+             <center class="burger">
+               <a href><img src="images/burger.png"></a>
+             </center>
+             <div class="menu-item">
+               <a class="lt3" href>Tovább</a>
+             </div>
+             <div class="menu-item">
+               <a class="lt4" href>Könyvek</a>
+             </div>
+             <div class="menu-item">
+               <a class="lt5" href>Képek</a>
+             </div>
+             <div class="menu-item">
+               <a class="lt6" href> Írás máshol</a>
+             </div>
+             <div class="menu-item">
+               <a class="lt7" href>Ismersz engem?</a>
+             </div>
+             <div class="menu-item">
+               <a class="lt8" href>Vedd fel a kapcsolatot!</a>
+             </div>
+           </div>
+         </div>
+       </header>
+       <div class="container bg-white">
+         <div class="text">
+           <h2 class="lt9">A tartós potencia és a hatalmas pénisz titka egy 70 éves férfi számára. Még a fiatalok is megirigyelnék.</h2>
+           <center>
+             <img src="images/1.jpg">
+           </center>
+           <p class="lt10">Szióka mindenkinek! A nevem Móni és igen, sugar baby vagyok. És nem, egyáltalán nem szégyellem.</p>
+           <p class="lt11">Nyíltan akarok beszélni, néha még kegyetlenül is. Mert mindent, amit ide posztolok, nem a gyengéknek van.</p>
+           <p class="lt12">Véletlen találtam meg a sugar daddym</p>
+           <p class="lt13">22 éves voltam és már sok faszt láttam. Aprótól a hatalmasig. <b> De ez volt az első alkalom, hogy egy idősebb férfivel és kis farokkal volt dolgom</b>.</p>
+           <p class="lt14">Egy gazdag barátom nagyapja volt.</p>
+           <p class="lt15"> Amikor találkoztam vele, eldöntöttem, hogy ez az öreg aranyember az enyém kell hogy legyen.</p>
+           <p class="lt16">Meghívtak egyszer a házukba és amikor a barátom kijött, úgy döntöttem cselekszem.</p>
+           <p class="lt17"> Beosontam az öreg szobájába. Csendben odamentem hozzá hátulról, egyik kezemmel megöleltem, a másikkal pedig könnyedén a nadrágjába nyúltam. Tudtam, hogy kell kényeztetni. Szóval, egy pillanat múlva letérdeltem előtte, és elkezdtem levenni a nadrágját.</p>
+           <p class="lt18"> Amikor megláttam, mi rejtőzik a kő alatt, alig tudtam visszatartani a nevetésem. <b>A franca olyan kicsi volt, amilyet még sose láttam. Nagyon-nagyon kicsi</b>.</p>
+           <center class="photos-wrp">
+             <div class="photos"><img src="images/2.jpg"></div>
+           </center>
+           <p class="lt19"> De abban reménykedtem, hogy ha feláll akkor nagyobb lesz. Bevettem a számba. Könnyen belefért természetesen. Majdnem teljesen lenyeltem.</p>
+           <p class="lt20">Abban a pillanatban, az a férfi felkapott és rápakolt engem az asztalra. Olyen szenvedéllyel hatolt belém... <b> De nem éreztem semmit. Sőt, be is fejezte egy perc alatt </b></p>
+           <p class="lt21"><b> <i>Hogy lehet elmenni ilyen puha farokkal?!</i> </b> Hogyan maradt együtt egyáltalán eddig barátom anyjával?!</p>
+           <p class="lt22">Azt hittem, hogy a teljes kudarc ... Csak egy kis kuki, ami nem lesz erősebb. Azt is mondanám, hogy még félig sem volt kemény ...</p>
+           <p class="lt23">Mi motivált arra, hogy mégis ezt az impotens öreget válasszam?!</p>
+           <p class="lt24">A válasz egyszerű: megígérte, hogy támogat engem.</p>
+           <p class="lt25">Belementem. Havi egy perc szex, amit észre sem vettem, semmi nem volt ahhoz a pénzhez képest, amit cserébe kaptam. Ami a szexuális életemet illeti, a többi pasim teljesen kielégített. </p>
+           <center class="photos-wrp hova">
+             <div class="photos"><img src="images/3.jpg"></div>
+           </center>
+           <p class="lt26">Egy idő után kezdtem észrevenni, hogy az én kedves öregem egyre aktívabb lesz. Úgy tűnt nagyon optimista és folyamatosan utalgatott, hogy kemény munkában less részem. Azt mondta,  talált egy varázs zselét. (<a href>Gigant-ot</a>, ahogy később megtudtam), ami 3-szor nagyobbá teszi a farkát. </p>
+           <p class="lt27">Kinevettem, amikor ezt mondta. Egy hosszú, puha kolbászt képzeltem el a sugar daddym lábai között.</p>
+           <p class="lt28">Bárcsak tudtam volna, mi vár rám... Furcsa szavai után az öreg körülbelül egy hónapra eltűnt (azt mondta, hogy üzleti útra megy).</p>
+           <p class="lt29">Amikor visszajött, azt mondta látni akar és, hogy vegyek fel egy szexi fehérneműt.</p>
+           <p class="lt30">Egy elegáns étteremben vacsoráztunk, ahol MÁR észrevettem az öreg szuper magabiztos megjelenését. Vacsora után elmentünk egy hotelbe.</p>
+           <p class="lt31">Azt hittem, minden a szokásos lesz. Néhány perc előjáték és szex, ami után az egész este az enyém.</p>
+           <p class="lt32">Felhívtam a másik szeretőmet,hogy randizzunk...</p>
+           <p class="lt33">Sose tévedtem még ekkorát...</p>
+           <p class="lt34">Épp csak beléptem a hotelszobába, de az uram már le is támadott.</p>
+           <p class="lt35">Amikor betettem a kezem a nadrágjába, lesokkolódtam.</p>
+           <p class="lt36">Hihetetlen volt.</p>
+           <p><b class="lt37">A puha és ráncos botja helyett egy hatalmas farok fogadott még azt is mondanám, hogy ÓRIÁSI, szép és acél kemény.</b></p>
+           <p><b class="lt38">Az egyetlen dolog, ami eszembe jutott akkor az volt, hogy "A fenébe is! Tényleg segített rajta a gél, amiről beszélt?</b></p>
+           <p class="lt39">Erős karjaival erősen a falhoz szorított, és éreztem, hogy bennem van.</p>
+           <p class="lt40">Ez volt az első alkalom a kapcsolatunkban, hogy tényleg éreztem a farkát.</p>
+           <p class="lt41">Azt hittem szét robbanok!</p>
+           <p class="lt42">Extázisban voltam ... Istenem, még sosem éreztem ilyet előtte.</p>
+           <p class="lt43">Az érzékiség csúcsa, amikor a puncim minden izma elképzelhetetlenül érezte a farkát.</p>
+           <p class="lt44">Amikor először volt orgazmusom, kivette belőlem a farkát, a karjaiba vett és a hálószobába vitt.</p>
+           <p class="lt45">Több, mint 2 óráig csináltuk.</p>
+           <center class="photos-wrp">
+             <div class="photos"><img src="images/4.jpg"></div>
+           </center>
+           <p class="lt46">Fáradt és kimerült voltam, nem gondoltam, hogy képes lesz ennél jobban is lenyűgözni ...</p>
+           <p class="lt47">De tévedtem.</p>
+           <p class="lt48">Nincsenek szavak, hogy mit éreztem ezután...</p>
+           <p class="lt49">ÉLETEMBEN ELŐSZÖR SPRICCELTEM!!!</p>
+           <center class="photos-wrp">
+             <div class="photos"><img src="images/5.jpg"></div>
+           </center>
+           <p class="lt50">Ki gondolta volna, hogy egy öreg nyugdíjas képes egy fiatal nőt ennyire megdugni?!</p>
+           <p class="lt51">Ha azt hiszed, hogy ez a történet vége, tévedsz.</p>
+           <p class="lt52">Azon az éjszakán kompenzált minden kudarcáért. Olyan volt, mintha úgy döntött volna, hogy minden mocskos álmát valóra váltja, olyan álmokat, amiket addig nem tudott átültetni a gyakorlatba...</p>
+           <p class="lt53">Amikor újra orgazmusom volt, az én sugar daddym úgy döntött, hogy ez még nem elég és hogy ez volt a tökéletes alkalom az orális szexre. Nem tetszett, és soha nem értettem a 69-ezést. De, ha egy embernek ekkora farka van, akkor hihetetlenül elvarázsló. Néha a farka megérintette a mandulákat, de ha valaki jól képzett, minden nagyon jól megy.</p>
+           <p class="lt54">Talán jobban szerette a számat, mint a puncim vagy a 69-et, ami segített neki elérni a csúcspontot, mert ez volt az a pillanat amikor elment. <b> Azt hittem, belefulladok a sok spermába.</b></p>
+           <p><b class="lt55">Annak ellenére, hogy összehúzódtak az izmai, nem hagyta abba.</b></p>
+           <p class="lt56">Röviden, nagyszerű volt. Még soha nem szexeltem ilyen jót.</p>
+           <p class="lt57">Az öreg tigrisem megmutatta rejtett potenciálját. Kész voltam imádni őt, és azt tenni, amit csak akart, hogy továbbra is élvezhessem ezt az örömöt.</p>
+           <p class="lt58">Persze, a szex után szakítottam az összes fiatalabb szeretőmmel. Miért lenne szükségem rájuk, ha vele sokkal jobbat szexelek?</p>
+           <center class="photos-wrp">
+             <div class="photos"><img src="images/6.jpg"></div>
+           </center>
+           <p class="lt59">Később azt mondta nekem, hogy csak egy hónap <b> rendszeres használat után <a href>Gigant-tal</a> 10cm-ről 20-ra növesztette a farkát</b>. </p>
+           <p class="lt60">Azt is bevallotta, hogy látta a kezdeti eredményt mindössze egy hét alatt. <b> A pénisze 2,5 cm-rel nőtt és 40 percig állt fel neki. </b> A masztizás után is állva maradt, és meg akart lepni, ezért egy hónapig távol volt, hogy boldoggá tegyen.</p>
+           <p class="lt61">Ezért ajánlom ezt a csodálatos <a href>Gigant-ot</a> minden kis péniszű férfinak. Az én kedves öregem elmondta, honnan rendelte és szeretném megosztani veled ezt az információt. A linket megtalálod a hivatalos honlaphoz lejjebb, a blogban. </p>
+           <p class="lt62">Țineți minte că miturile care spun că dimensiunea nu contează sunt doar mituri. O sculă nu poate fi niciodată PREA MARE! Întotdeauna e loc de mai mult.</p>
+           <center class="mw300">
+             <img src="images/prod.jpg">
+           </center>
+           <center class="btn-wrp">
+             <a class="ord-btn lt63" href>Rendeld meg!</a>
+           </center>
+           <div class="comments">
+             <div class="comment">
+               <div class="comm-ava"><img src="images/noname.jpg"></div>
+               <div class="comm-body">
+                 <p class="comm-name lt64">Horváth Szabolcs</p>
+                 <p class="date lt65"><script type="text/javascript">dtime_nums(-1, true)</script>08.09.2020</p>
+                 <p class="comm-text lt66">Soha nem volt intim életem. Nekem van egy nagyon kis péniszem van (5cm / 9 cm felállva). Ez megakadályozta, hogy sok éven át teljes életet éljek. Elmentem urológusokhoz és andrológusokhoz, de nem tudtak segíteni. Azt mondták nekem, hogy a nemi szervem normális. Hogy lehetne ez normális?! Senki sem mondta meg, hogyan tudnék együtt élni az ekkora farokkal. Ritkán vagyok elégedett bármivel. Mindig ideges vagyok miatta. Kezdek meggyőződni arról, hogy soha nem lesz intim életem, és az egyetlen dolog, amire számíthatok, a maszturbáció: (nem megyek a szaunába, a strandra stb., emiatt a jól ismert állapot miatt :) Nagyon remélem, hogy a <a href>a Gigant</a>tud nekem segíteni. </p>
+               </div>
+             </div>
+             <div class="comment">
+               <div class="comm-ava"><img src="images/noname.jpg"></div>
+               <div class="comm-body">
+                 <p class="comm-name lt67">Pesti Gábor</p>
+                 <p class="date lt68"><script type="text/javascript">dtime_nums(-1, true)</script>08.09.2020</p>
+                 <p class="comm-text lt69">Emlékszem, ugyanazok voltak a pszichológiai problémáim. Sok problémám volt emiatt. Az önbizalom hiánya, ami továbbra is a bizalom hiánya bármi másban. Még azt is el kellett ismernem, hogy a fizettem nőknek a szexért. Az egyik hölgy ajánlotta nekem ezt a gélt. Hallgattam a tanácsra és <a href>megrendeltem Gigant-ot.</a> Már használom 1.5 hónapja. Most már olyan farkam van, mint a legtöbb srácé. Több mint másfél év telt el azóta, és nem lett kisebb. Őszintén szólva, mindenkinek ajánlom.</p>
+                 <center>
+                   <img alt src="images/review1.jpg">
+                 </center>
+               </div>
+             </div>
+             <div class="comment">
+               <div class="comm-ava"><img src="images/noname.jpg"></div>
+               <div class="comm-body">
+                 <p class="comm-name lt70">Kováts Zsolti</p>
+                 <p class="date lt71"><script type="text/javascript">dtime_nums(-1, true)</script>08.09.2020</p>
+                 <p class="comm-text lt72">Nem tudom, hogyan kellene ide posztolni, de dicsekedni akarok a saját eredményeimmel. Csupán + 1 cm kerületben, de még csak egy hete használom.</p>
+                 <center>
+                   <img alt src="images/review2.jpg">
+                 </center>
+               </div>
+             </div>
+             <div class="comment">
+               <div class="comm-ava"><img src="images/noname.jpg"></div>
+               <div class="comm-body">
+                 <p class="comm-name lt73">Bagos Ágnes</p>
+                 <p class="date lt74"><script type="text/javascript">dtime_nums(-2, true)</script>07.09.2020</p>
+                 <p class="comm-text lt75">Elképesztő! Olyan farka lehet…! Milyen jó lenne, ha a férjemnek lenne valami ilyesmije, mert a 11 centisével nem igazán tudunk játszani. Azonnal megrendelem <a href>a Gigant-ot!</a> :) </p>
+               </div>
+             </div>
+             <div class="comment">
+               <div class="comm-ava"><img src="images/noname.jpg"></div>
+               <div class="comm-body">
+                 <p class="comm-name lt76">Fehér Gabriella</p>
+                 <p class="date lt77"><script type="text/javascript">dtime_nums(-2, true)</script>07.09.2020</p>
+                 <p class="comm-text lt78">Véletlenül találkoztam ezzel a cikkel, és úgy döntöttem megosztom mindenkivel a történetemet. Pontosabban, "a mi történetünket". 17 évig voltam házas. A kapcsolatunkban a szex soha nem volt prioritás. Elsősorban egy barátság volt. Ez történik, ha valakivel jól jössz ki lelkileg, de nem fizikailag. Természetesen a szex hiánya még mindig probléma. Nagyon ingerlékeny, ideges lettem (úgy tűnt, hogy ahogy idősebb leszek, elkezdtem tudat alatt megérteni, milyen örömöktől vagyok megfosztva). De pontosan két hónappal ezelőtt minden megváltozott. És ezek a változások a férjem farkának köszönhetők. Úgy tűnt, hogy valaki más lett volna belőle. Nagyon szenvedélyes lett, egy kicsit vad is, amit nagyon szerettem benne. Az ágyban minden érzés teljesen átértékelődött. Orgazmusos végre többször is volt az éjszaka folyamán! Persze ezektől a változásoktól picit gyanús lett. Kezdtem azt hinni, hogy pénisznagyobbító műtétje volt vagy hogy szeretője van. AMIÉRT ILYET MŰVELT AZ ÁGYBAN!!! Aztán megtaláltam a fiókjában - <a href>Gigant-ot</a> (az legrosszabb hely ahova elrejthette lol :)))) Röviden, tömören: fiúk és férfiak, ne pazaroljátok az időtök többé! Nem minden feleség vagy barátnő olyan türelmes, mint én.</p>
+               </div>
+             </div>
+             <div class="comment">
+               <div class="comm-ava"><img src="images/noname.jpg"></div>
+               <div class="comm-body">
+                 <p class="comm-name lt79">Kiss Nóri</p>
+                 <p class="date lt80"><script type="text/javascript">dtime_nums(-2, true)</script>07.09.2020</p>
+                 <p class="comm-text lt81">Teljesen egyetértek a fenti megjegyzéssel! Egyáltalán nem vesztegettem az időt, és egy hónap alatt segítettem nagyobbra nőni a "barátomnak", most joggal hívhatom  inkább a “játékomnak", 7-ről 20 cm-re. Csatoltam a képet. Igen, régen nagyon kicsi volt, most már pedig egyáltalán nem szégyellem</p>
+                 <center>
+                   <img alt src="images/review3.jpg">
+                 </center>
+               </div>
+             </div>
+             <div class="comment">
+               <div class="comm-ava"><img src="images/noname.jpg"></div>
+               <div class="comm-body">
+                 <p class="comm-name lt82">Juhász Noel</p>
+                 <p class="date lt83"><script type="text/javascript">dtime_nums(-3, true)</script>06.09.2020</p>
+                 <p class="comm-text lt84">Hihetetlen az eredmény!!! Simán le vagyok nyűgözve! Már megrendeltem. Alig várom, hogy megkapjam!</p>
+               </div>
+             </div>
+             <div class="comment">
+               <div class="comm-ava"><img src="images/noname.jpg"></div>
+               <div class="comm-body">
+                 <p class="comm-name lt85">Kiss Marci</p>
+                 <p class="date lt86"><script type="text/javascript">dtime_nums(-3, true)</script>06.09.2020</p>
+                 <p class="comm-text lt87">Második hete használom a <a href>Gigant-ot</a>. A péniszem 3,2 cm-rel nőtt!!! És olyan acél merev! A barátnőm azt hiszi, hogy tablettákat szedek, pedig nem!</p>
+                 <center>
+                   <img alt src="images/review4.jpg">
+                 </center>
+               </div>
+             </div>
+             <div class="comment">
+               <div class="comm-ava"><img src="images/noname.jpg"></div>
+               <div class="comm-body">
+                 <p class="comm-name lt88">Szabó Norbi</p>
+                 <p class="date lt89"><script type="text/javascript">dtime_nums(-3, true)</script>06.09.2020</p>
+                 <p class="comm-text lt90">Én is megrendeltem a <a href>Gigant-ot</a>. A csomag 4 nap után már megérkezett. Jól van csomagolva, nincs felirat a táskán vagy a csomagon, a gyártó gondoskodik ügyfelei névtelenségéről. Persze, irigylem a srácot a cikkben egy kicsit. Kisebb eredményeim voltak, de még így is lenyűgöző :)</p>
+                 <center>
+                   <img alt src="images/review5.jpg">
+                 </center>
+               </div>
+             </div>
+           </div>
+         </div>
+         <div class="sidebar">
+           <div class="ssba ssba-wrap">
+             <div style="text-align:center">
+               <a href><img alt="Share on Facebook" class="ssba ssba-img" src="images/facebook.png" title="Facebook"></a><span class="ssba_sharecount">12</span><a class="ssba_pinterest_share" data-site="pinterest" href><img alt="Pin on Pinterest" class="ssba ssba-img" src="images/pinterest.png" title="Pinterest"></a><span class="ssba_sharecount">20</span><a class="ssba_twitter_share" href><img alt="Tweet about this on Twitter" class="ssba ssba-img" src="images/twitter.png" title="Twitter"></a><span class="ssba_sharecount">11</span>
+             </div>
+           </div>
+           <div class="categories">
+             <h3 class="lt91">Kategóriák</h3>
+             <p><a class="lt92" href>Férfiak, akikkel voltam</a></p>
+             <p><a class="lt93" href>Piszkos</a></p>
+             <p><a class="lt94" href>Lányok, akikkel voltam</a></p>
+             <p><a class="lt95" href> Vendég hozzászólások</a></p>
+             <p><a class="lt96" href>Huncut</a></p>
+             <p><a class="lt97" href>Szex Tippek</a></p>
+             <p><a class="lt98" href>Az emberi test</a></p>
+             <p><a class="lt99" href>Tanácsok</a></p>
+           </div>
+           <center>
+             <img src="images/prod.jpg"><br>
+             <a class="ord-btn lt100" href>Rendelés</a>
+           </center>
+         </div>
+       </div>
+     </div>
+     <center id="ftr" style="display: block;">
+       <a class="ftr-btn lt101" href>RENDELD MEG MOST!</a>
+     </center>
+     <script src="js/main.js">
+     </script>
+     <script src="js/alarm.js">
+     </script>
+</body></html>
